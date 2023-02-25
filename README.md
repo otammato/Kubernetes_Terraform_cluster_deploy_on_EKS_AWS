@@ -230,3 +230,14 @@ data "aws_eks_cluster_auth" "cluster" {
 
 ```
 </details>
+
+6.3: Create VPC Configuration File
+
+Create the vpc.tf file to provision the VPC and the subnets. In the below code, take note of the region, cluster name, and the VPC subnets. You should consider using your custom details depending on how you have set up your AWS environment.
+
+<details markdown=1><summary markdown="span">Details</summary>
+
+```
+
+```
+</details>
