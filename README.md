@@ -404,6 +404,8 @@ provider "kubernetes" {
 
 Configure the required outputs after the deployment.
 
+<details markdown=1><summary markdown="span">Details</summary>
+
 ``` tf
 
 output "cluster_id" {
@@ -441,3 +443,4 @@ output "cluster_name" {
   value       = local.cluster_name
 }
 ```
+</details>
