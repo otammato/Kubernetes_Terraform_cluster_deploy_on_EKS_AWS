@@ -2,6 +2,10 @@
 
 [ Kubernetes Terraform EKS AWS ] This shall cover how to deploy an EKS cluster on AWS using Terraform
 
+```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+```
+
 1.1: Create AWS Policy
 On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option then add the details below:
 
