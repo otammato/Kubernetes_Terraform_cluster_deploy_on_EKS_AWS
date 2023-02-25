@@ -160,3 +160,22 @@ On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option the
 Head over to IAM > Users > Add users.
 
 Choose a username then check the “Programmatic access” and “AWS Management Console access” options, “Attach existing policies directly” option then search for the policy we created in the step above, attach it and create a user.
+
+6.1: Setup Terraform Environment
+Create a directory that shall be used as your working directory.
+
+<details markdown=1><summary markdown="span">Details</summary>
+```
+mkdir -p ./terraform-deployments && cd ./terraform-deployments
+```
+</details>
+
+6.2: Create EKS Cluster configuration file
+
+Create the eks-cluster.tffile and add the content below. My deployment has three worker nodes, you could choose to have more or less.
+
+<details markdown=1><summary markdown="span">Details</summary>
+```
+
+```
+</details>
