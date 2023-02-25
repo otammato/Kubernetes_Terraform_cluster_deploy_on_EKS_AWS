@@ -159,4 +159,4 @@ On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option the
 1.2: Create AWS User
 Head over to IAM > Users > Add users.
 
-Choose a username then check the “Programmatic access” and “AWS Management Console access” options.
+Choose a username then check the “Programmatic access” and “AWS Management Console access” options, “Attach existing policies directly” option then search for the policy we created in the step above, attach it and create a user.
