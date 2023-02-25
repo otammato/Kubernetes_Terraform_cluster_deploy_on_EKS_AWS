@@ -342,7 +342,7 @@ resource "aws_security_group" "all_worker_mgmt" {
 </details>
 
 6.5: Configure Terraform Providers
-In the versions.tffile, we shall configure the required providers and their respective versions.
+In the versions.tf file, we shall configure the required providers and their respective versions.
 
 <details markdown=1><summary markdown="span">Details</summary>
 
