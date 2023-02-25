@@ -173,7 +173,7 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 
 6.2: Create EKS Cluster configuration file
 
-Create the eks-cluster.tffile and add the content below. My deployment has three worker nodes, you could choose to have more or less.
+Create the eks-cluster.tf file and add the content below. My deployment has three worker nodes, you could choose to have more or less.
 
 <details markdown=1><summary markdown="span">Details</summary>
 
