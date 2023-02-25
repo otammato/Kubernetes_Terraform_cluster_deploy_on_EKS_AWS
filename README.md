@@ -187,7 +187,7 @@ Create the eks-cluster.tf file and add the content below. My deployment has thre
 module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = local.cluster_name
-  cluster_version = "1.20"
+  cluster_version = "1.25"
   subnets         = module.vpc.private_subnets
 
   tags = {
