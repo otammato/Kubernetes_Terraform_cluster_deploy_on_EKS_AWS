@@ -444,3 +444,5 @@ output "cluster_name" {
 }
 ```
 </details>
+
+Step-7: Initialize Terraform Workspace
