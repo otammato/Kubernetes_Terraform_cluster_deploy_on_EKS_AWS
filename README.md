@@ -148,6 +148,7 @@ On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option the
                 "kms:ListAliases",
                 "kms:ListResourceTags",
                 "kms:ScheduleKeyDeletion"
+                "iam:TagPolicy"
             ],
             "Resource": "*"
         }
