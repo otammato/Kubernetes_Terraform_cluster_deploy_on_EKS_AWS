@@ -2,7 +2,7 @@
 
 [ Kubernetes Terraform EKS AWS ] This shall cover how to deploy an EKS cluster on AWS using Terraform
 
-1.2: Create AWS Policy
+1.1: Create AWS Policy
 On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option then add the details below:
 
 <details markdown=1><summary markdown="span">Details</summary>
