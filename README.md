@@ -183,6 +183,17 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 ```
 </details>
 
+6.0: 
+
+The files needed are:
+
+1. eks-cluster.tf – holds the cluster resources such as the worker nodes.
+2. security-groups.tf – holds the information about the cluster subnets and VPC details
+3. versions.tf – holds the information about the needed provider versions.
+4. k8s.tf – holds the information about the Kubernetes provider
+5. vpc.tf – contains VPC resource information
+6. outputs.tf – contains the desired outputs when the deployment is finished.​
+
 6.2: Create EKS Cluster configuration file
 
 Create the eks-cluster.tf file and add the content below. My deployment has three worker nodes, you could choose to have more or less.
