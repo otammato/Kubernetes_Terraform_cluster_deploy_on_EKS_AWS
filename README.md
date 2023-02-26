@@ -203,7 +203,7 @@ module "eks" {
     root_volume_type = "gp2"
   }
 
-cluster_endpoint_private_access = "true"
+  cluster_endpoint_private_access = "true"
   cluster_endpoint_public_access  = "true"
 
   write_kubeconfig      = true
@@ -241,10 +241,9 @@ data "aws_eks_cluster_auth" "cluster" {
 
 Create the vpc.tf file to provision the VPC and the subnets. In the below code, take note of the region, cluster name, and the VPC subnets. You should consider using your custom details depending on how you have set up your AWS environment.
 
-<details markdown=1><summary markdown="span">Details</summary>
+<details markdown=1><summary markdown="span">vpc.tf</summary>
 
 ``` tf
-$ vim vpc.tf
 variable "region" {
   default     = "us-east-1"
   description = "AWS region"
