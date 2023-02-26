@@ -311,7 +311,7 @@ module "vpc" {
 
 Create security groups using the security-groups.tf configuration file.
 
-<details markdown=1><summary markdown="span">Details</summary>
+<details markdown=1><summary markdown="span">security-groups.tf</summary>
 
 ``` tf 
 resource "aws_security_group" "worker_group_mgmt_one" {
@@ -366,7 +366,7 @@ resource "aws_security_group" "all_worker_mgmt" {
 6.5: Configure Terraform Providers
 In the versions.tf file, we shall configure the required providers and their respective versions.
 
-<details markdown=1><summary markdown="span">Details</summary>
+<details markdown=1><summary markdown="span">versions.tf</summary>
 
 ``` tf 
 
@@ -410,7 +410,7 @@ terraform {
 
 Add k8s provider:
 
-<details markdown=1><summary markdown="span">Details</summary>
+<details markdown=1><summary markdown="span">k8s.tf</summary>
 
 ``` tf
 
@@ -426,7 +426,7 @@ provider "kubernetes" {
 
 Configure the required outputs after the deployment.
 
-<details markdown=1><summary markdown="span">Details</summary>
+<details markdown=1><summary markdown="span">outputs.tf</summary>
 
 ``` tf
 
@@ -468,3 +468,10 @@ output "cluster_name" {
 </details>
 
 Step-7: Initialize Terraform Workspace
+
+``` tf
+terraform init
+terraform validate
+terraform plan
+terraform apply
+```
