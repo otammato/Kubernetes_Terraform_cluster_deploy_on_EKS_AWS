@@ -187,7 +187,7 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 
 Create the eks-cluster.tf file and add the content below. My deployment has three worker nodes, you could choose to have more or less.
 
-<details markdown=1><summary markdown="span">Details</summary>
+<details markdown=1><summary markdown="span">eks-cluster.tf</summary>
 
 ``` tf
 module "eks" {
