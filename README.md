@@ -185,7 +185,7 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 
 6.0: 
 
-The files needed are:
+This is the files' structure needed for deployment:
 
 1. eks-cluster.tf – holds the cluster resources such as the worker nodes.
 2. security-groups.tf – holds the information about the cluster subnets and VPC details
