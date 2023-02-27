@@ -2,6 +2,11 @@
 
 [ Kubernetes Terraform EKS AWS ] This demo shall cover how to deploy an EKS cluster on AWS using Terraform
 
+![image](https://user-images.githubusercontent.com/104728608/221662986-59b30a81-aac5-4f95-b797-ec8ccc09e88a.png)
+
+![image](https://user-images.githubusercontent.com/104728608/221663231-0dff9cac-cc28-459d-b700-cb5847b1d714.png)
+
+
 ```
 #curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
