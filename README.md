@@ -7,7 +7,7 @@
 ![image](https://user-images.githubusercontent.com/104728608/221663231-0dff9cac-cc28-459d-b700-cb5847b1d714.png)
 
 
-
+#### 1 IAM Policy
 1.1: Create AWS Policy
 On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option then add the details below:
 
@@ -169,7 +169,8 @@ Head over to IAM > Users > Add users.
 
 Choose a username then check the “Programmatic access” and “AWS Management Console access” options, “Attach existing policies directly” option then search for the policy we created in the step above, attach it and create a user.
 
-6.1: Setup Terraform Environment
+#### 2. Terraform Environment and Terraform templates
+2.1: Setup Terraform Environment
 Create a directory that shall be used as your working directory.
 
 <details markdown=1><summary markdown="span">Details</summary>
@@ -179,9 +180,7 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 ```
 </details>
 
-6.0: 
-
-This is the files' structure needed for deployment:
+2.2: This is the files' structure needed for deployment:
 
 1. eks-cluster.tf – holds the cluster resources such as the worker nodes.
 2. security-groups.tf – holds the information about the cluster subnets and VPC details
@@ -190,7 +189,7 @@ This is the files' structure needed for deployment:
 5. vpc.tf – contains VPC resource information
 6. outputs.tf – contains the desired outputs when the deployment is finished.​
 
-6.2: Create EKS Cluster configuration file
+2.3: Create EKS Cluster configuration file
 
 Create the eks-cluster.tf file and add the content below. My deployment has three worker nodes, you could choose to have more or less.
 
@@ -250,7 +249,7 @@ data "aws_eks_cluster_auth" "cluster" {
 ```
 </details>
 
-6.3: Create VPC Configuration File
+2.4: Create VPC Configuration File
 
 Create the vpc.tf file to provision the VPC and the subnets. In the below code, take note of the region, cluster name, and the VPC subnets. You should consider using your custom details depending on how you have set up your AWS environment.
 
@@ -303,7 +302,7 @@ module "vpc" {
 ```
 </details>
 
-6.4: Create AWS Security Groups
+2.5: Create AWS Security Groups
 
 Create security groups using the security-groups.tf configuration file.
 
