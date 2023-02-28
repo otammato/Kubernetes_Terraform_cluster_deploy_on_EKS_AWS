@@ -7,15 +7,6 @@
 ![image](https://user-images.githubusercontent.com/104728608/221663231-0dff9cac-cc28-459d-b700-cb5847b1d714.png)
 
 
-```
-#curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-
-curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl
-chmod +x ./kubectl
-mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
-kubectl version --short --client
-history | awk '{$1=""; print substr($0,2)}'
-```
 
 1.1: Create AWS Policy
 On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option then add the details below:
@@ -497,4 +488,16 @@ We can run some basic commands for Kubernetes to confirm this.
 kubectl get nodes
 
 kubectl get pods --all-namespaces
+```
+
+
+this is how to install kubectl 
+```
+#curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.18.9/2020-11-02/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
+kubectl version --short --client
+history | awk '{$1=""; print substr($0,2)}'
 ```
