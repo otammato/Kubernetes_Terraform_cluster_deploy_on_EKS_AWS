@@ -358,7 +358,7 @@ resource "aws_security_group" "all_worker_mgmt" {
 ```
 </details>
 
-6.5: Configure Terraform Providers
+2.6: Configure Terraform Providers
 In the versions.tf file, we shall configure the required providers and their respective versions.
 
 <details markdown=1><summary markdown="span">versions.tf</summary>
@@ -417,7 +417,7 @@ provider "kubernetes" {
 ```
 </details>
 
-6.6: Configure Terraform Outputs in outputs.tf
+2.7: Configure Terraform Outputs in outputs.tf
 
 Configure the required outputs after the deployment.
 
@@ -462,7 +462,7 @@ output "cluster_name" {
 ```
 </details>
 
-Step-7: Initialize Terraform Workspace
+#### Initialize Terraform Workspace
 
 ``` tf
 terraform init
@@ -471,7 +471,7 @@ terraform plan
 terraform apply
 ```
 
-Step-9: Export EKS kueconfig to manage Kubernetes Cluster
+#### Export EKS kueconfig to manage Kubernetes Cluster
 
 To manage our EKS cluster on CLI, we need for configure kubectl context by importing the EKS kubeconfig as below:
 
