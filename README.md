@@ -480,3 +480,21 @@ terraform validate
 terraform plan
 terraform apply
 ```
+
+Step-9: Export EKS kueconfig to manage Kubernetes Cluster
+
+To manage our EKS cluster on CLI, we need for configure kubectl context by importing the EKS kubeconfig as below:
+
+```
+aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
+```
+
+The command exports the eks kubeconfig and you can now manage your Kubernetes cluster using kubectl.
+
+We can run some basic commands for Kubernetes to confirm this.
+
+```
+kubectl get nodes
+
+kubectl get pods --all-namespaces
+```
