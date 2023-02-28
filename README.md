@@ -7,7 +7,7 @@
 ![image](https://user-images.githubusercontent.com/104728608/221663231-0dff9cac-cc28-459d-b700-cb5847b1d714.png)
 
 
-#### 1 IAM Policy
+#### 1. IAM Policy
 1.1: Create AWS Policy
 On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option then add the details below:
 
@@ -462,7 +462,7 @@ output "cluster_name" {
 ```
 </details>
 
-#### Initialize Terraform Workspace
+#### 3. Initialize Terraform Workspace
 
 ``` tf
 terraform init
@@ -471,7 +471,7 @@ terraform plan
 terraform apply
 ```
 
-#### Export EKS kueconfig to manage Kubernetes Cluster
+#### 4. Export EKS kueconfig to manage Kubernetes Cluster
 
 To manage our EKS cluster on CLI, we need for configure kubectl context by importing the EKS kubeconfig as below:
 
