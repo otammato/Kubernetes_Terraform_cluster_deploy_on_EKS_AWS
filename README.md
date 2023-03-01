@@ -1,6 +1,6 @@
 # Kubernetes_Terraform_EKS_AWS
 
-[ Kubernetes Terraform EKS AWS ] This demo shall cover how to deploy an EKS cluster on AWS using Terraform
+[ Kubernetes Terraform EKS AWS ] This demo shall cover how to deploy a Kubernetes cluster on AWS EKS using Terraform
 
 ![image](https://user-images.githubusercontent.com/104728608/221662986-59b30a81-aac5-4f95-b797-ec8ccc09e88a.png)
 
