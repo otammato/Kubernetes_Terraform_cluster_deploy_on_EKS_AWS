@@ -1,4 +1,4 @@
-# Kubernetes_Terraform_EKS_AWS
+# Kubernetes_Terraform_deploy_on_EKS_AWS
 
 [ Kubernetes Terraform EKS AWS ] This demo shall cover how to deploy a Kubernetes cluster on AWS EKS using Terraform
 
