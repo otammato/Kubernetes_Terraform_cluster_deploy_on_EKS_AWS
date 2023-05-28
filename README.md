@@ -8,6 +8,10 @@ Te working one is available here:
 
 https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
 
+or 
+
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
+
 
 If you use AWS Cloud9 you also have to disallow AWS Managed Temporary Credentials
 
