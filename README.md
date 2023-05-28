@@ -2,6 +2,16 @@
 
 [ Kubernetes Terraform EKS AWS ] This demo shall cover how to deploy a Kubernetes cluster on AWS EKS using Terraform
 
+The described below method doesn't work properly anymore
+
+Te working one available here:
+
+https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
+
+<br>
+<br>
+<br>
+<br>
 
 This is the expected result after launching the Terraform template:
 
