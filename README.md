@@ -184,7 +184,7 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 ```
 </details>
 
-2.2: This is the overall files' structure needed for the deployment (each file content can be found in the next steps)
+2.2: This is the overall files' structure needed for the deployment (the content of each file can be found in the next steps)
 
 1. eks-cluster.tf – holds the cluster resources such as the worker nodes
 2. security-groups.tf – holds the information about the cluster subnets and VPC details
