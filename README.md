@@ -15,9 +15,7 @@ https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
 
 If you use AWS Cloud9 you also have to disallow AWS Managed Temporary Credentials
 
-Go to Cloud9 > Preferences > AWS Settings > AWS Managed Temporary Credentials and turn it off
-
-You will see a different error now (no valid credential sources for Terraform AWS Provider found). 
+Go to Cloud9 > Preferences > AWS Settings > AWS Managed Temporary Credentials and turn it off.
 
 Store your permanent AWS access credentials in the environment. Use ```aws configure``` command. 
 <br>
