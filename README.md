@@ -168,6 +168,7 @@ On AWS console, go to IAM > Policies > Create Policy. Choose the JSON option the
 </details>
 
 1.2: Create AWS User
+
 Head over to IAM > Users > Add users.
 
 Choose a username then check the “Programmatic access” and “AWS Management Console access” options, “Attach existing policies directly” option then search for the policy we created in the step above, attach it and create a user.
@@ -183,14 +184,14 @@ mkdir -p ./terraform-deployments && cd ./terraform-deployments
 ```
 </details>
 
-2.2: This is the files' structure needed for deployment:
+2.2: This is the overall files' structure needed for the deployment (each file content can be found in the next steps)
 
-1. eks-cluster.tf – holds the cluster resources such as the worker nodes.
+1. eks-cluster.tf – holds the cluster resources such as the worker nodes
 2. security-groups.tf – holds the information about the cluster subnets and VPC details
-3. versions.tf – holds the information about the needed provider versions.
+3. versions.tf – holds the information about the needed provider versions
 4. k8s.tf – holds the information about the Kubernetes provider
 5. vpc.tf – contains VPC resource information
-6. outputs.tf – contains the desired outputs when the deployment is finished.​
+6. outputs.tf – contains the desired outputs when the deployment is finished
 
 2.3: Create EKS Cluster configuration file
 
