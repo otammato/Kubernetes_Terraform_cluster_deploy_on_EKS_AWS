@@ -407,7 +407,7 @@ terraform {
 ```
 </details>
 
-Add k8s provider:
+Add k8s provider in the k8s.tf file:
 
 <details markdown=1><summary markdown="span">k8s.tf</summary>
 
