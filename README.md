@@ -21,6 +21,8 @@ Store your permanent AWS access credentials in the environment. Use ```aws confi
 <br>
 <br>
 
+---
+
 This is the expected result after launching the Terraform template:
 
 ![image](https://user-images.githubusercontent.com/104728608/221662986-59b30a81-aac5-4f95-b797-ec8ccc09e88a.png)
